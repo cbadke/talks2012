@@ -1,0 +1,30 @@
+what is functional programming?
+	- old
+	- expressive
+	- powerful collection processing
+
+why is it important?
+	- moores law
+
+immutability and concurrency
+	- data transformation vs mutation
+	- cash example
+
+higher order functions
+	- not the function pointers your dad used...
+	- a new method of abstraction.. you can abstract away algorithms rather than data patterns
+		- especially powerful when combined with generics
+		- STL sorting algorithms...
+
+but so what?
+	- c# features
+		- linq, Func<>, Action<>, lambda expressions
+	- testability
+
+the case for f#
+	- you CAN use these techniques in C# successfully BUT the language is style primarily imperative and mutation oriented
+	- f# gives you access to all the gooey center of the CLR but is functional and immutable in focus. the language will lend itself to the style
+
+the case for something else...
+	- see how a completely different community operates
+		- learn new idioms and metaphors
