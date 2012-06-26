@@ -6,12 +6,22 @@ using System.Threading.Tasks;
 
 namespace Demo
 {
+    class Product
+    {
+        public string Name;
+        public int Price;
+
+        public override string ToString()
+        {
+            return String.Format("Product: {0}, Price: {1}", Name, Price);
+        }
+    }
 
     class Sort
     {
-        public static IEnumerable<int> InsertionSort(IEnumerable<int> list, Func<int,int,bool> isRightOf )
+        public static IEnumerable<T> InsertionSort<T>(IEnumerable<T> list, Func<T,T,bool> isRightOf )
         {
-            var newList = new List<int>();
+            var newList = new List<T>();
 
             foreach (var thing in list)
             {
@@ -33,14 +43,18 @@ namespace Demo
     {
         static void Main(string[] args)
         {
-            List<int> list = new List<int>() {4, 3, 1, 2};
+            List<Product> list = new List<Product>() {
+                new Product {Name = "Apple", Price = 4}, 
+                new Product {Name = "Orange", Price = 3},
+                new Product {Name = "Pear", Price = 1},
+                new Product {Name = "Lime", Price = 2}};
 
-            Func<int,int,bool> isRightOf = (a, b) =>
+            Func<Product,Product,bool> isRightOf = (a, b) =>
                 {
-                    return a >= b;
+                    return a.Name.Length >= b.Name.Length;
                 };
 
-            List<int> sorted = Sort.InsertionSort(list, isRightOf).ToList();
+            List<Product> sorted = Sort.InsertionSort<Product>(list, isRightOf).ToList();
 
             foreach (var item in sorted)
             {
