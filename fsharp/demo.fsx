@@ -1,11 +1,14 @@
 open System
 
-let x = [1; 2; 3]
+let x = [1; 2; 3; 4]
 Console.WriteLine(x)
 
-let add = fun accum item -> accum + item
+let double = fun a -> 2*a
+let even = fun a -> a % 2 = 0
 
-let sum = List.reduce add x
+let d = x
+         |> List.filter even
+         |> List.map double
 
-Console.WriteLine(sum)
+Console.WriteLine(d)
 
