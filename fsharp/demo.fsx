@@ -3,10 +3,9 @@ open System
 let x = [1; 2; 3]
 Console.WriteLine(x)
 
-let mutable badSum = 0
+let add = fun accum item -> accum + item
 
-for n in x do
-    badSum <- badSum + n
+let sum = List.reduce add x
 
-Console.WriteLine(badSum)
+Console.WriteLine(sum)
 
