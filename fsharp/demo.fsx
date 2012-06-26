@@ -1,14 +1,12 @@
 open System
 
-let x = 2
+let x = [1; 2; 3]
 Console.WriteLine(x)
 
-x = 3
-Console.WriteLine(x)
+let mutable badSum = 0
 
+for n in x do
+    badSum <- badSum + n
 
-let mutable y = 8
-Console.WriteLine(y)
+Console.WriteLine(badSum)
 
-y <- 56
-Console.WriteLine(y)
