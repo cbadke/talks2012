@@ -9,14 +9,14 @@ namespace Demo
 
     class Sort
     {
-        public static IEnumerable<int> InsertionSort(IEnumerable<int> list)
+        public static IEnumerable<int> InsertionSort(IEnumerable<int> list, Func<int,int,bool> isRightOf )
         {
             var newList = new List<int>();
 
             foreach (var thing in list)
             {
                 int i = 0;
-                while (i < newList.Count() && thing >= newList[i])
+                while (i < newList.Count() && isRightOf(thing, newList[i]))
                 {
                     ++i;
                 }
@@ -35,7 +35,12 @@ namespace Demo
         {
             List<int> list = new List<int>() {4, 3, 1, 2};
 
-            List<int> sorted = Sort.InsertionSort(list).ToList();
+            Func<int,int,bool> isRightOf = (a, b) =>
+                {
+                    return a >= b;
+                };
+
+            List<int> sorted = Sort.InsertionSort(list, isRightOf).ToList();
 
             foreach (var item in sorted)
             {
