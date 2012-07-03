@@ -1,0 +1,32 @@
+http://gar1t.com/blog/2012/01/23/node.js-is-bad-ass-rock-star-tech/
+
+- what is nodejs?
+- REPL
+- npm
+- debugging
+  - install node-inspector
+- modules (monkey)
+- web server w/ html
+- web server w/ connect
+- middleware
+
+
+
+
+
+
+REPL
+
+npm
+  install
+    - connect
+    - nodemon
+
+  -g flag
+
+
+hello world
+
+debugging with nodemon
+
+
