@@ -1,0 +1,24 @@
+{
+  "name": "my-app-name",
+  "version": "0.3.0",
+  "author": "Nodejitsu <support@nodejitsu.com>",
+  "description": "a simple zero-configuration command-line http server",
+  "contributors": [
+    {
+      "name": "Marak Squires",
+      "email": "marak@nodejitsu.com"
+    }
+  ],
+  "dependencies" : {
+    "colors"   :  "*",
+    "flatiron" :  "0.1.x",
+    "optimist" :  "0.2.x",
+    "union"    :  "0.1.x",
+    "ecstatic" :  "0.1.x"
+  },
+  "license": "MIT",
+  "engine": {
+    "node": ">=0.4"
+  }
+}
+

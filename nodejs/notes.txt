@@ -3,8 +3,13 @@ http://gar1t.com/blog/2012/01/23/node.js-is-bad-ass-rock-star-tech/
 - what is nodejs?
 - REPL
 - npm
+  - what is it?
+  - show package.json
+  - search for node-inspector
+  - globally install node-inspector
 - debugging
-  - install node-inspector
+  - write simple app
+  - demo node-inspector
 - modules (monkey)
 - web server w/ html
 - web server w/ connect
