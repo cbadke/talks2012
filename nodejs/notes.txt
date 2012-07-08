@@ -10,6 +10,10 @@ http://gar1t.com/blog/2012/01/23/node.js-is-bad-ass-rock-star-tech/
 - debugging
   - write simple app
   - demo node-inspector
+    - start nodemon with --debug-brk
+    - start node-inspector
+    - load page
+    - show debugger keyword
 - modules (monkey)
 - web server w/ html
 - web server w/ connect
