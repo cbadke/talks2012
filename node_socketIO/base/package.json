@@ -1,0 +1,6 @@
+{ "name" : "socketIODemo",
+  "version" : "0.0.1",
+  "dependencies" : { 
+                    "connect" : "1.x.x"
+                   } 
+}

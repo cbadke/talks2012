@@ -1,0 +1,19 @@
+body {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+}
+#playArea {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto -50px;
+}
+
+#playCanvas {
+  border: 1px solid black;
+  cursor: crosshair;
+}
+
+#textArea {
+  height: 50px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+
+
+<!doctype html>
+
+<html lang='en'>
+<title>SocketIO Demo</title>
+<head>
+  <meta charset='utf-8'>
+  <link href='/styles/style.css' rel='stylesheet' type='text/css'>
+  <link href='/styles/play.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div id='playerBanner'></div>
+  <div id='playArea'>
+    <canvas id='playCanvas'>
+      <p>Unfortunately your browser does not support HTML5 canvas. Try again from another browser.</p>
+    </canvas>
+  </div>
+  <div id='textArea'>
+    <input id='guess' type='text'/>
+  </div>
+
+  <script type='text/javascript' src='/javascript/jquery/jquery-1.7.2.min.js'></script>
+  <script type='text/javascript' src='/javascript/drawCanvas.js'></script>
+  <script type='text/javascript'>
+    $(document).ready(function() {
+      var drawCanvas = new DrawCanvas('#playCanvas');
+    });
+  </script>
+</body>
+</html>
